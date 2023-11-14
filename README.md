@@ -34,6 +34,21 @@ effortlessJS.postAjax('https://example.com/api/submit', { key: 'value' })
     .catch(error => console.error(error));
 ```
 
+## updateWithAjax(url,elementId, template)
+- **Purpose**: Perform an AJAX update with template
+- **Usage**:
+```javascript
+function rowTemplate(item) {
+    return `<tr>
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.age}</td>
+            </tr>`;
+}
+
+listenJS.updateWithAjax('https://example.com/data.json', 'tableBody', rowTemplate);
+````
+
 ## show(elementId)
 - Purpose: Shows a hidden HTML element.
 - **Usage**:
