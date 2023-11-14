@@ -10,9 +10,10 @@ Inspired by [html-first](https://html-first.com/)
 - **Purpose**: Attaches an event listener to the specified element.
 - **Usage**:
 ```javascript
-  effortlessJS.action('buttonId', 'click', function() { 
+  function logClick(){
       console.log('Button clicked'); 
-  });
+  }
+  effortlessJS.action('buttonId', 'click', logClick);
 ```
 
 ## `getAjax(url)`
