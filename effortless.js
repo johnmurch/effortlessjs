@@ -50,7 +50,7 @@ var effortlessJS = {
         });
     },
 
-       updateWithAjax: function (url, elementId, templateFunction) {
+    updateWithAjax: function (url, elementId, templateFunction) {
         this.getAjax(url)
             .then(data => {
                 var element = document.getElementById(elementId);
