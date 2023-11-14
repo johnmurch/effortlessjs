@@ -9,7 +9,7 @@ Inspired by [html-first](https://html-first.com/)
 ## `action(elementId, eventType, handler)`
 - **Purpose**: Attaches an event listener to the specified element.
 - **Usage**:
-  ```javascript
+```javascript
   effortlessJS.action('buttonId', 'click', function() { 
       console.log('Button clicked'); 
   });
@@ -17,7 +17,7 @@ Inspired by [html-first](https://html-first.com/)
 
 ## `getAjax(url)`
 - **Purpose**: Performs an AJAX GET request.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.getAjax('https://example.com/api/data')
     .then(data => console.log(data))
@@ -26,7 +26,7 @@ effortlessJS.getAjax('https://example.com/api/data')
 
 ## `postAjax(url, data)`
 - **Purpose**: Performs an AJAX POST request.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.postAjax('https://example.com/api/submit', { key: 'value' })
     .then(response => console.log(response))
@@ -35,28 +35,28 @@ effortlessJS.postAjax('https://example.com/api/submit', { key: 'value' })
 
 ## show(elementId)
 - Purpose: Shows a hidden HTML element.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.show('hiddenElementId');
 ```
 
 ## hide(elementId)
 - Purpose: Hides a visible HTML element.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.hide('visibleElementId');
 ```
 
 ## toggle(buttonId, showElementId, hideElementId)
 - Purpose: Toggles visibility of elements upon a button click.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.toggle('toggleButtonId', 'elementToShowId', 'elementToHideId');
 ````
 
 ## getFormData(formId)
 - Purpose: Retrieves and returns form data as an object.
-- **Usagex**:
+- **Usage**:
 ```javascript
 let formData = effortlessJS.getFormData('formId');
 console.log(formData);
@@ -64,7 +64,7 @@ console.log(formData);
 
 ## validateForm(formId, rules)
 - Purpose: Validates form fields based on provided rules.
-- **Usagex**:
+- **Usage**:
 ```javascript
 let isFormValid = effortlessJS.validateForm('formId', {
     'inputId': { required: true }
@@ -74,7 +74,7 @@ console.log('Is Form Valid:', isFormValid);
 
 ## handleFormSubmit(formId, callback)
 - Purpose: Handles form submission with a callback function.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.handleFormSubmit('formId', function(data) {
     // Handle form submission
@@ -83,7 +83,7 @@ effortlessJS.handleFormSubmit('formId', function(data) {
 
 ## resetForm(formId)
 - Purpose: Resets a form and clears any validation states.
-- **Usagex**:
+- **Usage**:
 ```javascript
 effortlessJS.resetForm('formId');
 ```
