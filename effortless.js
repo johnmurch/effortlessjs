@@ -92,6 +92,112 @@ var effortlessJS = {
         });
     },
 
+     addClass: function(elementId, className) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.classList.add(className);
+        } else {
+            console.error(`addClass: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    removeClass: function(elementId, className) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.classList.remove(className);
+        } else {
+            console.error(`removeClass: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    setAttribute: function(elementId, attr, value) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.setAttribute(attr, value);
+        } else {
+            console.error(`setAttribute: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    removeAttribute: function(elementId, attr) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.removeAttribute(attr);
+        } else {
+            console.error(`removeAttribute: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    getText: function(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            return element.textContent;
+        } else {
+            console.error(`getText: Element with ID '${elementId}' not found.`);
+            return '';
+        }
+    },
+
+    setText: function(elementId, text) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.textContent = text;
+        } else {
+            console.error(`setText: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    getHTML: function(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            return element.innerHTML;
+        } else {
+            console.error(`getHTML: Element with ID '${elementId}' not found.`);
+            return '';
+        }
+    },
+
+    setHTML: function(elementId, html) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.innerHTML = html;
+        } else {
+            console.error(`setHTML: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    onHover: function(elementId, hoverInHandler, hoverOutHandler) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            if (typeof hoverInHandler === 'function') {
+                element.addEventListener('mouseover', hoverInHandler);
+            }
+            if (typeof hoverOutHandler === 'function') {
+                element.addEventListener('mouseout', hoverOutHandler);
+            }
+        } else {
+            console.error(`onHover: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    focus: function(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.focus();
+        } else {
+            console.error(`focus: Element with ID '${elementId}' not found.`);
+        }
+    },
+
+    blur: function(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.blur();
+        } else {
+            console.error(`blur: Element with ID '${elementId}' not found.`);
+        }
+    }
+
     getFormData: function(formId) {
         const form = document.getElementById(formId);
         const formData = new FormData(form);
