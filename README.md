@@ -15,8 +15,8 @@ Inspired by [html-first](https://html-first.com/)
   });
 ```
 
-## getAjax(url)
-- Purpose: Performs an AJAX GET request.
+## `getAjax(url)`
+- **Purpose**: Performs an AJAX GET request.
 - **Usagex**:
 ```javascript
 effortlessJS.getAjax('https://example.com/api/data')
@@ -24,8 +24,8 @@ effortlessJS.getAjax('https://example.com/api/data')
     .catch(error => console.error(error));
 ```
 
-## postAjax(url, data)
-- Purpose: Performs an AJAX POST request.
+## `postAjax(url, data)`
+- **Purpose**: Performs an AJAX POST request.
 - **Usagex**:
 ```javascript
 effortlessJS.postAjax('https://example.com/api/submit', { key: 'value' })
