@@ -2,7 +2,7 @@
 Making VanillaJS Great Gain
 
 
-Inspired by (html-first)[https://html-first.com/]
+Inspired by [html-first](https://html-first.com/)
 
 effortlessJS Function Documentation
 action(elementId, eventType, handler)
