@@ -50,6 +50,23 @@ var effortlessJS = {
         });
     },
 
+       updateWithAjax: function (url, elementId, templateFunction) {
+        this.getAjax(url)
+            .then(data => {
+                var element = document.getElementById(elementId);
+                if (!element) {
+                    console.error("Element not found: " + elementId);
+                    return;
+                }
+
+                var htmlContent = data.map(item => templateFunction(item)).join('');
+                element.innerHTML = htmlContent;
+            })
+            .catch(error => {
+                console.error('Error in updateWithAjax:', error);
+            });
+    },
+
     show: function(elementId) {
         var element = document.getElementById(elementId);
         if (element) {
