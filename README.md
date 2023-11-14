@@ -6,7 +6,7 @@ Inspired by [html-first](https://html-first.com/)
 
 # effortlessJS Function Documentation
 
-## `action(elementId, eventType, handler)`
+## action(elementId, eventType, handler)
 - **Purpose**: Attaches an event listener to the specified element.
 - **Usage**:
 ```javascript
@@ -16,7 +16,7 @@ Inspired by [html-first](https://html-first.com/)
   effortlessJS.action('buttonId', 'click', logClick);
 ```
 
-## `getAjax(url)`
+## getAjax(url)
 - **Purpose**: Performs an AJAX GET request.
 - **Usage**:
 ```javascript
@@ -25,7 +25,7 @@ effortlessJS.getAjax('https://example.com/api/data')
     .catch(error => console.error(error));
 ```
 
-## `postAjax(url, data)`
+## postAjax(url, data)
 - **Purpose**: Performs an AJAX POST request.
 - **Usage**:
 ```javascript
