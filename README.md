@@ -1,5 +1,5 @@
 # effortlessjs
-Making VanillaJS Great Gain
+Making VanillaJS Great Again!
 
 
 Inspired by [html-first](https://html-first.com/)
