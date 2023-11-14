@@ -69,6 +69,89 @@ effortlessJS.hide('visibleElementId');
 ```javascript
 effortlessJS.toggle('toggleButtonId', 'elementToShowId', 'elementToHideId');
 ````
+## addClass: function(elementId, className)
+- Purpose: Add class to element.
+- **Usage**:
+```javascript
+effortlessJS.addClass('toggleButtonId', 'newClass');
+````
+
+## removeClass: function(elementId, className)
+- Purpose: Removes class from element.
+- **Usage**:
+```javascript
+effortlessJS.removeClass('toggleButtonId', 'newClass');
+````
+
+## setAttribute: function(elementId, attribute, value)
+- Purpose: Sets attribute for an element.
+- **Usage**:
+```javascript
+effortlessJS.setAttribute('toplink', 'href', 'https://www.google.com');
+````
+
+## removeAttribute: function(elementId, attribute)
+- Purpose: Removes attribute from an element.
+- **Usage**:
+```javascript
+effortlessJS.setAttribute('toplink', 'href');
+````
+
+## getText: function(elementId)
+- Purpose: Gets text from element.
+- **Usage**:
+```javascript
+effortlessJS.getText('content');
+````
+
+## setText: function(elementId, text)
+- Purpose: Sets text for an element.
+- **Usage**:
+```javascript
+effortlessJS.setText('content', 'this is the longest song ever');
+````
+
+## getHTML: function(elementId)
+- Purpose: Gets HTML from element.
+- **Usage**:
+```javascript
+effortlessJS.getHTML('content');
+````
+
+## setHTML: function(elementId, text)
+- Purpose: Sets HTML for an element.
+- **Usage**:
+```javascript
+effortlessJS.setHTML('content', '<h1>Hello!</h1>');
+````
+
+## onHover: function(elementId, hoverInHandler, hoverOutHandler)
+- Purpose: Trigger onHover for an element
+- **Usage**:
+```javascript
+effortlessJS.onHover('navItem', 
+    function() { showDropdownMenu(); }, 
+    function() { hideDropdownMenu(); }
+);
+````
+
+## focus: function(elementId)
+- Purpose: Sets focus on the specified element.
+- **Usage**:
+```javascript
+effortlessJS.action('searchIcon', 'click', function() {
+    effortlessJS.focus('searchInput');
+});
+````
+
+## blur: function(elementId)
+- Purpose: Removes focus from the specified element.
+- **Usage**:
+```javascript
+effortlessJS.action('autocompleteSuggestion', 'click', function() {
+    effortlessJS.blur('autocompleteInput');
+});
+````
 
 ## getFormData(formId)
 - Purpose: Retrieves and returns form data as an object.
